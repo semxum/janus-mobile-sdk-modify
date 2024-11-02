@@ -14,7 +14,7 @@ curl:
 	if [ ! -d third_party/curl ]; then git clone https://github.com/curl/curl third_party/curl && cd third_party/curl && git checkout curl-7_67_0; fi
 
 djinni:
-	if [ ! -d third_party/djinni ]; then git clone https://github.com/alist/djinni.git third_party/djinni && cd third_party/djinni && git checkout ac7d0d21449922143ccdeb1751b6a09a5a9ca790; fi
+	if [ ! -d third_party/djinni ]; then git clone https://github.com/alist/djinni.git third_party/djinni && cd third_party/djinni; fi
 
 json:
 	if [ ! -d third_party/json ]; then git clone https://github.com/nlohmann/json third_party/json && cd third_party/json && git checkout v3.7.0; fi
