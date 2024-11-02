@@ -12,19 +12,18 @@ This project has been abandoned. <br/>
 </p>
 
 <p>
-1 Ubuntu 18.0.4
+1. Ubuntu 18.0.4
 </p>
 <p>
-2 sudo apt update
-</p>
-
-<p>
-3 sudo apt uprade
+2. sudo apt update
 </p>
 
 <p>
-4 git clone https://github.com/semxum/janus-mobile-sdk-modify.git
-  cd janus-mobile-sdk-modify
-  make
-  
+3. sudo apt uprade
+</p>
+
+<p>
+4. git clone https://github.com/semxum/janus-mobile-sdk-modify.git <br />
+  cd janus-mobile-sdk-modify <br />
+  make  <br />
 </p>
