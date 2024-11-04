@@ -12,14 +12,16 @@ This project has been abandoned. <br/>
 </p>
 
 <p>
-1. Ubuntu 18.0.4
+1. From Ubuntu 18.0.4
 </p>
 <p>
 2. sudo apt update
 </p>
 
 <p>
-3. sudo apt uprade
+3. sudo apt uprade<br />
+  sudo apt-get install -y build-essential cmake git inotify-tools valgrind python3-pip openjdk-8-jdk curl uuid-dev libtool autotools-dev golang doxygen python<br />
+  sudo pip3 install gdbgui<br />
 </p>
 
 <p>
