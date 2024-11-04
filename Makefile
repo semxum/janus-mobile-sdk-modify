@@ -27,10 +27,11 @@ googletest_bundle: googletest
 
 deps: folder boringssl curl json googletest_bundle djinni
 	go version || if [ $$? -ne 0 ]; then >&2 echo "Warning: Go is not installed"; fi
-
+	echo "cd djinni ";
+	echo $(GENERATED_DIR);
 gluecode: djinni
 	cd third_party/djinni && rm -rf src/target && src/run --java-out $(GENERATED_DIR)/java/com/github/helloiampau/janus/generated --java-package com.github.helloiampau.janus.generated --cpp-out $(GENERATED_DIR)/cpp/janus --cpp-namespace Janus --jni-out $(GENERATED_DIR)/jni --ident-jni-file native_foo_bar --ident-jni-class NativeFooBar --objc-out $(GENERATED_DIR)/objc --objc-type-prefix Janus --objcpp-out $(GENERATED_DIR)/objcpp --idl $(ROOT_DIR)/janus-client.djinni
-
+	echo "clean_lib";
 clean_lib:
 	rm -rfv build/libjanus.so build/CMakeFiles/janus.dir build/CMakeCache.txt
 
